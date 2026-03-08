@@ -1,0 +1,8 @@
+[build]
+builder = "RAILPACK"
+buildCommand = "pip install -r requirements.txt"
+
+[deploy]
+startCommand = "python codigo_final.py"
+restartPolicyType = "ON_FAILURE"
+restartPolicyMaxRetries = 10
